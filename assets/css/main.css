@@ -1,0 +1,175 @@
+@import url("../font/Roboto-Regular.ttf");
+@font-face {
+  font-family: "Roboto", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+* input {
+  appearance: none;
+  outline: none;
+  border: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100dvh;
+  font-family: "Roboto", sans-serif;
+}
+.main .top-info {
+  position: relative;
+  height: 67%;
+  width: 100%;
+  border-radius: 0 0 25px 25px;
+  color: #FFF;
+}
+.main .top-info .img-absolute {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 0 0 25px 25px;
+  filter: brightness(50%) grayscale(20%);
+}
+.main .top-info .img-absolute img#weather-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0 0 25px 25px;
+}
+.main .top-info .top-info-ctn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+.main .top-info .top-info-ctn .city-time {
+  display: flex;
+  flex-direction: column;
+}
+.main .top-info .top-info-ctn .city-time span.city {
+  font-size: 2rem;
+}
+.main .top-info .top-info-ctn .city-time span.date {
+  font-size: 0.8rem;
+  color: #D7D7D7;
+}
+.main .top-info .top-info-ctn .weather-icon {
+  width: 25%;
+  aspect-ratio: 4/3;
+}
+.main .top-info .top-info-ctn .weather-icon img#weather-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.main .top-info .top-info-ctn .temp-weather {
+  display: flex;
+  flex-direction: column;
+}
+.main .top-info .top-info-ctn .temp-weather span.temp {
+  font-size: 3rem;
+}
+.main .top-info .top-info-ctn .temp-weather span.weather {
+  font-size: 0.8rem;
+}
+.main .top-info .top-info-ctn .wind-humidity {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 92%;
+  height: 4.5rem;
+  border-radius: 2.25rem;
+  background-color: #FFF;
+  color: #121212;
+}
+.main .top-info .top-info-ctn .wind-humidity .wind,
+.main .top-info .top-info-ctn .wind-humidity .humidity {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .top-info .top-info-ctn .wind-humidity .wind .wind-icon,
+.main .top-info .top-info-ctn .wind-humidity .wind .humidity-icon,
+.main .top-info .top-info-ctn .wind-humidity .humidity .wind-icon,
+.main .top-info .top-info-ctn .wind-humidity .humidity .humidity-icon {
+  width: 1.2rem;
+  aspect-ratio: 4/3;
+}
+.main .top-info .top-info-ctn .wind-humidity .wind .wind-icon img,
+.main .top-info .top-info-ctn .wind-humidity .wind .humidity-icon img,
+.main .top-info .top-info-ctn .wind-humidity .humidity .wind-icon img,
+.main .top-info .top-info-ctn .wind-humidity .humidity .humidity-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.main .top-info .top-info-ctn .wind-humidity .wind span.wind-speed,
+.main .top-info .top-info-ctn .wind-humidity .wind span.humidity-percentage,
+.main .top-info .top-info-ctn .wind-humidity .humidity span.wind-speed,
+.main .top-info .top-info-ctn .wind-humidity .humidity span.humidity-percentage {
+  font-size: 0.8rem;
+}
+.main .top-info .top-info-ctn .wind-humidity .wind span.wind-label,
+.main .top-info .top-info-ctn .wind-humidity .wind span.humidity-label,
+.main .top-info .top-info-ctn .wind-humidity .humidity span.wind-label,
+.main .top-info .top-info-ctn .wind-humidity .humidity span.humidity-label {
+  font-size: 0.5rem;
+  color: #808080;
+}
+.main .top-info .top-info-ctn .wind-humidity .separator {
+  height: 70%;
+  width: 2px;
+  border-radius: 1px;
+  background-color: #121212;
+}
+.main .hourly-forecast {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  height: 6rem;
+}
+.main .search-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(92% - 1rem);
+  height: 1.5rem;
+  border: #121212 solid 2px;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+}
+.main .search-bar input#search-input {
+  flex: 1;
+  font-size: 0.8rem;
+}
+.main .search-bar #search {
+  cursor: pointer;
+  width: 1.5rem;
+  aspect-ratio: 1/1;
+}
+.main .search-bar #search img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.main .message {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #C72019;
+}
+
+/*# sourceMappingURL=main.css.map */

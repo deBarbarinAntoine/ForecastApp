@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteo Live</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<div class="main">
+    <div class="top-info">
+        <div class="img-absolute">
+            <img id="weather-background" src="../assets/img/bg/day.png" alt="weather-background" />
+            <div class="filter"></div>
+        </div>
+        <div class="top-info-ctn">
+            <div class="city-time">
+                <span class="city">Marseille</span>
+                <span class="date">15 Avril 2024</span>
+            </div>
+            <div class="weather-icon">
+                <img id="weather-icon" src="" alt="weather-icon" />
+            </div>
+            <div class="temp-weather">
+                <span class="temp">20°</span>
+                <span class="weather">Soleil</span>
+            </div>
+            <div class="wind-humidity">
+                <div class="wind">
+                    <div class="wind-icon">
+                        <img id="wind-icon" src="../assets/img/icon/wind.png" alt="wind-icon" />
+                    </div>
+                    <span class="wind-speed">8km/h</span>
+                    <span class="wind-label">Vent</span>
+                </div>
+                <div class="separator"></div>
+                <div class="humidity">
+                    <div class="humidity-icon">
+                        <img id="humidity-icon" src="../assets/img/icon/humidity.png" alt="humidity-icon" />
+                    </div>
+                    <span class="humidity-percentage">77%</span>
+                    <span class="humidity-label">Humidité</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hourly-forecast">
+
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Nom de ville..." name="city" id="search-input" />
+        <div id="search">
+            <img src="../assets/img/icon/search.png" alt="search-icon" />
+        </div>
+    </div>
+    <div class="message"></div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

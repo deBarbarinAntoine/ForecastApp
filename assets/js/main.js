@@ -38,6 +38,7 @@ async function reloadForecast(city) {
         messageElement.innerHTML = 'Ville non trouvée !';
         return;
     }
+    messageElement.innerHTML = '';
     const time = getHour(weather.dt, weather.timezone);
     const sunset = getHour(weather.sys.sunset, weather.timezone);
     if (sunset < time) {
